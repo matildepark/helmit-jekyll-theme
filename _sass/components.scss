@@ -1,0 +1,31 @@
+// styling the markdown
+
+blockquote {
+  padding: 1.3em;
+  background: $color-text;
+  color: $color-background;
+  border-top: 7px double $color-background;
+  border-bottom: 7px double $color-background;
+  font-size: 1.4em;
+  font-style: italic;
+}
+
+code {
+  padding: 2px;
+  font-size: $body-font-size;
+  background: $color-background-code;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  border-top: 1px solid #999;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 2em;
+}
+
+img {
+  max-width: 100%;
+}

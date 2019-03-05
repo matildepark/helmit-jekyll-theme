@@ -1,5 +1,6 @@
 <nav>
-  {% for my_page in site.pages % }
+  <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+  {% for my_page in site.pages %}
     {% if my_page.title %}
     <li>
       <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
