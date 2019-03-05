@@ -1,3 +1,20 @@
+// reset
+* {
+	box-sizing: border-box !important;
+	margin: 0;
+}
+
+input, select, textarea, button {
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+	margin: 0;
+	padding: 0;
+}
+
 // styling the markdown
 
 blockquote {
@@ -16,7 +33,7 @@ code {
   background: $color-background-code;
 }
 
-h1, h2, h3, h4, h5, h6 {
+article h1, article h2, article h3, article h4, article h5, article h6 {
   font-weight: 400;
   border-top: 1px solid #999;
   margin-bottom: 20px;
@@ -28,4 +45,37 @@ h1 {
 
 img {
   max-width: 100%;
+}
+
+// homepage clearing
+
+.table { display: table !important; }
+
+.left { float: left; }
+.right { float: right; }
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table
+}
+.clearfix:after { clear: both }
+
+// animations
+
+@keyframes slideIn {
+  from {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+%slideIn {
+  opacity: 0;
+	animation: 1s slideIn ease;
+	animation-fill-mode: forwards;
 }

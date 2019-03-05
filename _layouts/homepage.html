@@ -4,6 +4,22 @@
 
   <body>
     <header class="home-header">
+      <h1>{{ site.title | escape }}</h1>
+      <h4>{{ site.description }}</h4>
+      <div class="home-div-container clearfix">
+      <div class="home-left left table">
+        {% for my_page in site.pages %}
+          {% if my_page.title %}
+          <li>
+            <a href="{{ my_page.url | prepend: site.baseurl }}">{{ my_page.title }}</a>
+            </li>
+            {% endif %}
+        {% endfor %}
+        </div>
+        <div class="home-right left table">
+          
+          </div>
+          </div>
     </header>
   </body>
 </html>

@@ -1,26 +1,10 @@
-// reset
-* {
-	box-sizing: border-box !important;
-	margin: 0;
-}
-
-input, select, textarea, button {
-	font-family: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
-	margin: 0;
-	padding: 0;
-}
-
 // scaffolding
 
 body {
   font-family: $body-font-family;
   line-height: 1.5;
   color: $color-text;
+	cursor: default;
 }
 
 // nav stuff
@@ -28,15 +12,41 @@ a.site-title {
 	color: $color-text;
 	font-weight: bold;
 	letter-spacing: -5px;
+	margin-right: -3px;
 	font-size: 8em;
 	text-decoration: none;
+	background: linear-gradient(to left, white 50%, $color-highlighter 50%);
+	background-size: 200% 100%;
+	background-position: right bottom;
+	transition: all 0.5s ease-out;
+	&:hover {
+		background-position: left bottom;
+	}
 }
 nav {
+	@extend %slideIn;
+	animation-delay: 0.2s;
 	position: relative;
 	right: 0;
 	margin-top: -4em;
 	text-align: right;
 	li {
+		@extend %slideIn;
+		&:nth-child(1) {
+			animation-delay: 0.3s;
+		}
+		&:nth-child(2) {
+			animation-delay: 0.5s;
+		}
+		&:nth-child(3) {
+			animation-delay: 0.7s;
+		}
+		&:nth-child(4) {
+			animation-delay: 0.9s;
+		}
+		&:nth-child(5) {
+			animation-delay: 1.1s;
+		}
 		margin-top: 5px;
 		list-style-type: none;
 		border-bottom: 1px solid #999;
@@ -60,13 +70,70 @@ nav {
 a {
 	color: inherit;
 	text-decoration: none;
+	cursor: pointer;
 }
 
+// homepage
+header.home-header {
+	@extend %slideIn;
+	animation-delay: 0.3s;
+	background-color: rgb(240,241,241);
+	padding: 5em;
+	margin: 10vh auto 3vh auto;
+	max-width: 60vw;
+	h1 {
+		font-size: 4em;
+		text-align: right;
+	}
+	h4 {
+		font-weight: 400;
+		font-size: 1.2em;
+		text-align: right;
+	}
+	div.home-left {
+		margin-top: 3em;
+		margin-left: 2em;
+		width: 45%;
+		border-top: 1px solid $color-text;
+		display: inline-block;
+		li {
+			width: 100%;
+			border-bottom: 1px solid black;
+			list-style-type: none;
+			margin: 1em 0 1em 0;
+			text-align: right;
+			a:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+	div.home-right {
+		margin-top: 3em;
+		display: inline-block;
+		margin-left: 2em;
+		width: 45%;
+		border-top: 1px solid $color-text;
+	}
+}
+
+.fa, .far, .fas, .fab {
+	font-size: 1.5rem;
+}
+
+.fa:hover, .far:hover, .fas:hover, .fab:hover {
+	color: $color-highlighter;
+}
+
+// posts
+
 article {
+	@extend %slideIn;
+	animation-delay: 0.8s;
+	clear: both;
 	margin: 2em auto 0 auto;
   max-width: 60vw;
 	a {
-		background: yellow;
+		background: $color-highlighter;
 		color: #111;
 		padding-left: 2px;
 		padding-right: 2px;
