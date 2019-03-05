@@ -28,13 +28,13 @@ a.site-title {
 	color: $color-text;
 	font-weight: bold;
 	letter-spacing: -5px;
-	font-size: 8rem;
+	font-size: 8em;
 	text-decoration: none;
 }
 nav {
 	position: relative;
 	right: 0;
-	margin-top: -4.9em;
+	margin-top: -4em;
 	text-align: right;
 	li {
 		margin-top: 5px;
@@ -43,11 +43,14 @@ nav {
 		width: 300px;
 		padding-bottom: 5px;
 		a {
+			font-weight: 500;
 			padding-right: 5px;
 			color: $color-text;
-			font-weight: normal;
 			font-size: 1.2rem;
 			text-decoration: none;
+			&:hover {
+				text-decoration: underline;
+			}
 		}
 
 	}

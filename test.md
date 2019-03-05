@@ -1,6 +1,10 @@
 ---
 layout: page
 title: "Check me out!"
+categories:
+- category two
+tags:
+- tag two
 ---
 
 > look at me, i'm testing out a quote!
