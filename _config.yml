@@ -1,0 +1,10 @@
+title: your cool blog
+description: It has a lot going on.
+baseurl: ""
+url: ""
+
+github:
+# Pick from Twitter or Mastodon / Fediverse.
+social:
+
+permalink: /:year/:month/:title
