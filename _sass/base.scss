@@ -220,6 +220,8 @@ footer {
 
 // category pages
 .post-block {
+  margin-top: 0.5em;
+  margin-bottom: 2em;
   a {
     background: transparent;
   }
@@ -231,6 +233,9 @@ footer {
   h2 a:hover {
     text-decoration: none;
   }
+  p {
+  font-size: 0.8em;
+}
 }
 .post-date {
   font-size: 0.7em;

@@ -35,7 +35,7 @@ code {
 }
 
 p {
-margin-bottom: 0.5em;
+margin-bottom: 1em;
 }
 
 article h1.h1-title {
@@ -49,12 +49,20 @@ article h1:not(.h1-title), article h2, article h3, article h4, article h5, artic
   border-top: 1px solid $border-top-color;
 	font-family: $header-font-family;
 	margin-top: 1em;
+	margin-bottom: 1em;
 }
 
 article {
 	ol {
 		margin-left: 2em;
 		margin-bottom: 1em;
+	}
+	ul {
+		margin-left: 2em;
+		li {
+			margin-top: 0.2em;
+			margin-bottom: 0.2em;
+		}
 	}
 }
 
@@ -115,4 +123,9 @@ img {
 	&:hover {
 		background-position: left bottom;
 	}
+}
+
+ul {
+	margin-top: 1em;
+	margin-bottom: 1em;
 }
