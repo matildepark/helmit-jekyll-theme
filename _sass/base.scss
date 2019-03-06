@@ -100,10 +100,14 @@ a {
     @extend %slideIn;
     animation-delay: 0.5s;
     div.home-left {
+      background-color: $blurb-left-background;
+      color: $blurb-left-text;
       flex-grow: 1;
       margin-right: 8px;
     }
     div.home-right {
+      background-color: $blurb-right-background;
+      color: $blurb-right-text;
       flex-grow: 1;
       margin-left: 8px;
     }
@@ -118,7 +122,8 @@ a {
 header.home-header {
 	@extend %slideIn;
 	animation-delay: 0.3s;
-	background-color: rgb(240,241,241);
+	background-color: $header-background;
+  color: $header-text;
 	padding: 5em;
 	margin: 10vh auto 3vh auto;
 	div.header-left {
@@ -167,6 +172,8 @@ div.bottom-container {
 }
 
 div.home-bottom {
+  background-color: $blurb-bottom-background;
+  color: $blurb-bottom-text;
   flex-grow: 1;
 }
 
@@ -174,6 +181,7 @@ div.home-bottom {
 
 .fa, .far, .fas, .fab {
 	font-size: 1.5rem;
+  color: $header-text;
 }
 
 .fa:hover, .far:hover, .fas:hover, .fab:hover {

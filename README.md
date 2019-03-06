@@ -8,7 +8,7 @@ Clone this repo.
 
 ## Usage
 
-Make some changes to make the content more you:
+Make some changes to make the site more you while you're adding content:
 
 - Start by configuring the site! Go to `_config.yml` and fill in as necessary.
 - Edit the content in `index.html` for the blurbs on the front page.
