@@ -26,7 +26,7 @@ Or install it yourself as:
 
 ## Usage
 
-Make some changes to make the content more you.
+Make some changes to make the content more you:
 
 - Start by configuring the site! Go to `_config.yml` and fill in as necessary.
 - Edit the content in `index.html` for the blurbs on the front page.
