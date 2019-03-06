@@ -6,6 +6,8 @@ body {
   color: $color-text;
 	cursor: default;
   font-size: $body-font-size;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 // nav stuff
@@ -57,9 +59,7 @@ nav {
 				text-decoration: underline;
 			}
 		}
-
 	}
-
 }
 
 a {
@@ -207,10 +207,6 @@ footer {
 
 // category pages
 .post-block {
-  .post-date {
-    font-size: 0.8em;
-    font-weight: bold;
-  }
   a {
     background: transparent;
   }
@@ -221,6 +217,10 @@ footer {
   h2 a:hover {
     text-decoration: none;
   }
+}
+.post-date {
+  font-size: 0.7em;
+  font-weight: bold;
 }
 
 .highlight {
