@@ -2,3 +2,11 @@
 layout: page
 title: projects
 ---
+
+{% for post in site.categories.projects %}
+  <div class="post-block">
+  <a class="post-date" href="{{ post.url | prepend: site.baseurl }}">{{ post.date | date: "%b %-d, %Y" }}</a>
+  <h2 class="highlight"><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></h2>
+  <p><b class="highlight">{{ post.categories }} / {{ post.tags }} //</b> {{ post.excerpt | strip_html | truncatewords:30 }}</p>
+  </div>
+{% endfor %}

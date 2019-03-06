@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "sample page"
+title: "Another test page for projects."
 categories:
-- category one
+- projects
 tags:
 - tag one
 ---
