@@ -2,6 +2,10 @@
 
 A spiffy, minimal theme based on information- and text-first, sans-serif designs. Created for a site featuring blog posts and project posts for a single developer or artist. Based off Broccolini's [Swiss theme](https://github.com/broccolini/swiss) with some design cues from academic, digital, and philosophy publishing layouts.
 
+![](https://user-images.githubusercontent.com/20846414/53905663-114a0580-4017-11e9-9e3f-74f8550b2b74.png)
+
+![](https://user-images.githubusercontent.com/20846414/53905680-2161e500-4017-11e9-9795-49c2d20c07df.png)
+
 ## Installation
 
 Clone this repo.
