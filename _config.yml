@@ -4,6 +4,9 @@ description: It has a lot going on.
 baseurl: "" # The site subpath -- for example, "/blog"
 url: "" # http://example.com for example.
 
+# Want to give people your email?
+email: test@test.com
+
 # Enter your GitHub username.
 github: test
 

@@ -18,6 +18,9 @@
         {% endfor %}
         </div>
         <div class="header-right border-top left table">
+          {% if site.email %}
+          <a href="mailto:{{ site.email }}"><i class="fas fa-envelope"></i></a>
+          {% endif %}
           {% if site.github %}
           <a href="https://github.com/{{ site.github }}" rel="me"><i class="fab fa-github"></i></a>
           {% endif %}
