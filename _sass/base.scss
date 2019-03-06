@@ -279,7 +279,7 @@ footer {
   }
 }
 
-@media all and (max-width: 1024px) {
+@media all and (min-width: 481px) and (max-width: 1024px) {
   body {
     font-size: 14px;
   }
