@@ -1,7 +1,6 @@
 # helmit
 
-
-
+A spiffy, minimal theme based on information- and text-first, sans-serif designs. Created for a site featuring blog posts and project posts for a single developer or artist. Based off Broccolini's [Swiss theme](https://github.com/broccolini/swiss) with some design cues from academic, digital, and philosophy publishing layouts.
 
 ## Installation
 
