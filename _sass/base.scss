@@ -5,6 +5,7 @@ body {
   line-height: 1.5;
   color: $color-text;
 	cursor: default;
+  font-size: $body-font-size;
 }
 
 // nav stuff
@@ -15,13 +16,7 @@ a.site-title {
 	margin-right: -3px;
 	font-size: 8em;
 	text-decoration: none;
-	background: linear-gradient(to left, white 50%, $color-highlighter 50%);
-	background-size: 200% 100%;
-	background-position: right bottom;
-	transition: all 0.5s ease-out;
-	&:hover {
-		background-position: left bottom;
-	}
+  @extend %highlight;
 }
 nav {
 	@extend %slideIn;
@@ -73,7 +68,7 @@ a {
 	cursor: pointer;
 }
 
-// homepage
+// Homepage
 
 .homepage-container {
   min-height: 85vh;
@@ -86,7 +81,6 @@ a {
   }
   h3 {
     font-size: 1.5em;
-    font-weight: 400;
     text-align: right;
   }
   h4 {
@@ -100,9 +94,22 @@ a {
     justify-content: space-evenly;
     @extend %slideIn;
     animation-delay: 0.5s;
+    div.home-left {
+      flex-grow: 1;
+      margin-right: 8px;
+    }
+    div.home-right {
+      flex-grow: 1;
+      margin-left: 8px;
+    }
+    a {
+      background-color: $color-highlighter;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 }
-
 header.home-header {
 	@extend %slideIn;
 	animation-delay: 0.3s;
@@ -138,31 +145,27 @@ header.home-header {
 	}
 }
 
-div.home-left {
-  flex-grow: 1;
-  margin-right: 8px;
-}
-
-div.home-right {
-  flex-grow: 1;
-  margin-left: 8px;
-}
-
 div.bottom-container {
   @extend %slideIn;
-  margin-top: 32px;
+  margin-top: 3em;
   animation-delay: 0.6s;
   clear: both;
   display: flex;
-      justify-content: space-evenly;
-      margin-bottom: 16px;
-
+  justify-content: space-evenly;
+  margin-bottom: 3em;
+  a {
+      background-color: $color-highlighter;
+      &:hover {
+        text-decoration: underline;
+      }
+  }
 }
 
 div.home-bottom {
   flex-grow: 1;
 }
 
+// fontawesome - logo styles
 
 .fa, .far, .fas, .fab {
 	font-size: 1.5rem;
@@ -200,4 +203,26 @@ footer {
     margin-top: 8px;
     margin-left: 8px;
   }
+}
+
+// category pages
+.post-block {
+  .post-date {
+    font-size: 0.8em;
+    font-weight: bold;
+  }
+  a {
+    background: transparent;
+  }
+  h2 {
+    border-top: 0px solid transparent;
+    margin: -5px 0 0 0;
+  }
+  h2 a:hover {
+    text-decoration: none;
+  }
+}
+
+.highlight {
+  @extend %highlight;
 }
