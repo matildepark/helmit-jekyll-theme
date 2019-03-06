@@ -40,7 +40,8 @@ margin-bottom: 0.5em;
 
 article h1, article h2, article h3, article h4, article h5, article h6 {
   font-weight: 400;
-  border-top: 1px solid #999;
+  border-top: 1px solid $border-top-color;
+	font-family: $header-font-family;
 }
 
 h1 {
@@ -70,7 +71,7 @@ img {
 // useful repeatable things
 
 .border-top {
-	border-top: 1px solid $color-text;
+	border-top: 1px solid $border-top-color;
 }
 
 // animations
@@ -96,7 +97,7 @@ img {
 	background: linear-gradient(to left, white 50%, $color-highlighter 50%);
 	background-size: 200% 100%;
 	background-position: right bottom;
-	transition: all 0.5s ease-out;
+	transition: background-position 0.5s ease-out;
 	&:hover {
 		background-position: left bottom;
 	}

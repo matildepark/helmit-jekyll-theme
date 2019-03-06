@@ -1,6 +1,7 @@
 // scaffolding
 
 body {
+  background-color: $color-background;
   font-family: $body-font-family;
   line-height: 1.5;
   color: $color-text;
@@ -12,6 +13,7 @@ body {
 
 // nav stuff
 a.site-title {
+  font-family: $header-font-family;
 	color: $color-text;
 	font-weight: bold;
 	letter-spacing: -5px;
@@ -46,7 +48,7 @@ nav {
 		}
 		margin-top: 5px;
 		list-style-type: none;
-		border-bottom: 1px solid #999;
+		border-bottom: 1px solid $border-top-color;
 		width: 300px;
 		padding-bottom: 5px;
 		a {
@@ -76,14 +78,17 @@ a {
   margin: 0 auto;
   text-align: right;
   h1 {
+    font-family: $header-font-family;
     font-size: 4em;
     text-align: right;
   }
   h3 {
+    font-family: $header-font-family;
     font-size: 1.5em;
     text-align: right;
   }
   h4 {
+    font-family: $header-font-family;
     font-weight: 400;
     font-size: 1.2em;
     text-align: right;
@@ -123,7 +128,7 @@ header.home-header {
 		display: inline-block;
 		li {
 			width: 100%;
-			border-bottom: 1px solid black;
+			border-bottom: 1px solid $border-top-color;
 			list-style-type: none;
 			margin: 1em 0 1em 0;
 			text-align: right;
@@ -211,6 +216,7 @@ footer {
     background: transparent;
   }
   h2 {
+    font-family: $header-font-family;
     border-top: 0px solid transparent;
     margin: -5px 0 0 0;
   }

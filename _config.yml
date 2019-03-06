@@ -1,12 +1,15 @@
+# Title and description will feature on the site!
 title: your cool blog
 description: It has a lot going on.
-baseurl: ""
-url: ""
+baseurl: "" # The site subpath -- for example, "/blog"
+url: "" # http://example.com for example.
 
+# Enter your GitHub username.
 github: test
+
 # Pick from "twitter" or "fediverse".
 social: twitter
-# If "fediverse", enter the whole url for username.
+# If "fediverse", enter the whole url for username:
 social_username: test
 
 permalink: /:year/:month/:title

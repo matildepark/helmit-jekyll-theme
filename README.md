@@ -1,10 +1,6 @@
 # helmit
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
 
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
 
 
 ## Installation
@@ -31,7 +27,14 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+Make some changes to make the content more you.
+
+- Start by configuring the site! Go to `_config.yml` and fill in as necessary.
+- Edit the content in `index.html` for the blurbs on the front page.
+- Revise the copyright notice in `_includes/footer.html` to take ownership! Maybe use a [Creative Commons](https://creativecommons.org/) if you're feeling generous.
+- Put your content into the site! Remember to put a datestamp at the start of the filename for stuff in `_posts`. The sample content can give an example of how it works.
+- Change the site's style -- `_sass/variables.scss` lets you mingle with the colors and fonts.
+- The site is configured to be used as a personal site that features *blog posts* and *project posts* in two separate sections. If you have additional categories to add, then make another page in the root directory with `yourcategoryname.html` as the filename; you can just copy and paste content from `blog.html` and replace the word 'blog' with your category's name. Done.
 
 ## Contributing
 
@@ -49,4 +52,3 @@ To add a custom directory to your theme-gem, please edit the regexp in `helmit.g
 ## License
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
-
