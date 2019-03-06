@@ -3,8 +3,10 @@ description: It has a lot going on.
 baseurl: ""
 url: ""
 
-github:
-# Pick from Twitter or Mastodon / Fediverse.
-social:
+github: test
+# Pick from "twitter" or "fediverse".
+social: twitter
+# If "fediverse", enter the whole url for username.
+social_username: test
 
 permalink: /:year/:month/:title

@@ -25,12 +25,17 @@ blockquote {
   border-bottom: 7px double $color-background;
   font-size: 1.4em;
   font-style: italic;
+	margin-bottom: 8px;
 }
 
 code {
   padding: 2px;
   font-size: $body-font-size;
   background: $color-background-code;
+}
+
+p {
+margin-bottom: 0.5em;
 }
 
 article h1, article h2, article h3, article h4, article h5, article h6 {
@@ -60,6 +65,13 @@ img {
   display: table
 }
 .clearfix:after { clear: both }
+
+
+// useful repeatable things
+
+.border-top {
+	border-top: 1px solid $color-text;
+}
 
 // animations
 

@@ -3,11 +3,12 @@
 {% include header.html %}
 
   <body>
+    <div class="homepage-container">
     <header class="home-header">
       <h1>{{ site.title | escape }}</h1>
       <h4>{{ site.description }}</h4>
       <div class="home-div-container clearfix">
-      <div class="home-left left table">
+      <div class="header-left border-top left table">
         {% for my_page in site.pages %}
           {% if my_page.title %}
           <li>
@@ -16,10 +17,35 @@
             {% endif %}
         {% endfor %}
         </div>
-        <div class="home-right left table">
-          
+        <div class="header-right border-top left table">
+          {% if site.github %}
+          <a href="https://github.com/{{ site.github }}" rel="me"><i class="fab fa-github"></i></a>
+          {% endif %}
+          {% if site.social == "twitter" %}
+          <a href="https://twitter.com/{{ site.social_username }}" rel="me"><i class="fab fa-twitter"></i></a>
+          {% elsif site.social == "fediverse" %}
+          <a href="{{ site.social_username }}" rel="me"><i class="fab fa-mastodon"></i></a>
+          {% endif %}
           </div>
           </div>
     </header>
+    <div class="home-blurb-container">
+      <div class="home-left border-top">
+        <h4>I've done this.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum semper ultricies. Nulla vulputate quis mi et vestibulum. Aliquam ac rutrum eros. Morbi ac mi tortor. Vivamus fringilla luctus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam fringilla leo sit amet magna sollicitudin dictum. Donec rutrum, sem non sagittis pellentesque, nunc sapien posuere quam, non luctus nisl est id lorem. Curabitur ut tincidunt quam, vel bibendum lectus.</p>
+      </div>
+      <div class="home-right border-top">
+        <h4>I've done that.</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum semper ultricies. Nulla vulputate quis mi et vestibulum. Aliquam ac rutrum eros. Morbi ac mi tortor. Vivamus fringilla luctus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam fringilla leo sit amet magna sollicitudin dictum. Donec rutrum, sem non sagittis pellentesque, nunc sapien posuere quam, non luctus nisl est id lorem. Curabitur ut tincidunt quam, vel bibendum lectus.</p>
+      </div>
+    </div>
+    <div class="bottom-container">
+      <div class="home-bottom border-top">
+        <h3>I do a lot.</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum semper ultricies. Nulla vulputate quis mi et vestibulum. Aliquam ac rutrum eros. Morbi ac mi tortor. Vivamus fringilla luctus porttitor. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam fringilla leo sit amet magna sollicitudin dictum. Donec rutrum, sem non sagittis pellentesque, nunc sapien posuere quam, non luctus nisl est id lorem. Curabitur ut tincidunt quam, vel bibendum lectus.</p>
+      </div>
+    </div>
+    </div>
+    {% include footer.html %}
   </body>
 </html>

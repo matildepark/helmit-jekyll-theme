@@ -74,27 +74,45 @@ a {
 }
 
 // homepage
+
+.homepage-container {
+  min-height: 85vh;
+  max-width: 60vw;
+  margin: 0 auto;
+  text-align: right;
+  h1 {
+    font-size: 4em;
+    text-align: right;
+  }
+  h3 {
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: right;
+  }
+  h4 {
+    font-weight: 400;
+    font-size: 1.2em;
+    text-align: right;
+  }
+  div.home-blurb-container {
+    margin-top: 5em;
+    display: flex;
+    justify-content: space-evenly;
+    @extend %slideIn;
+    animation-delay: 0.5s;
+  }
+}
+
 header.home-header {
 	@extend %slideIn;
 	animation-delay: 0.3s;
 	background-color: rgb(240,241,241);
 	padding: 5em;
 	margin: 10vh auto 3vh auto;
-	max-width: 60vw;
-	h1 {
-		font-size: 4em;
-		text-align: right;
-	}
-	h4 {
-		font-weight: 400;
-		font-size: 1.2em;
-		text-align: right;
-	}
-	div.home-left {
+	div.header-left {
 		margin-top: 3em;
 		margin-left: 2em;
 		width: 45%;
-		border-top: 1px solid $color-text;
 		display: inline-block;
 		li {
 			width: 100%;
@@ -107,31 +125,63 @@ header.home-header {
 			}
 		}
 	}
-	div.home-right {
+	div.header-right {
 		margin-top: 3em;
+		padding-top: 8px;
 		display: inline-block;
+		text-align: right;
 		margin-left: 2em;
 		width: 45%;
-		border-top: 1px solid $color-text;
+    a {
+      margin-left: 8px;
+    }
 	}
 }
+
+div.home-left {
+  flex-grow: 1;
+  margin-right: 8px;
+}
+
+div.home-right {
+  flex-grow: 1;
+  margin-left: 8px;
+}
+
+div.bottom-container {
+  @extend %slideIn;
+  margin-top: 32px;
+  animation-delay: 0.6s;
+  clear: both;
+  display: flex;
+      justify-content: space-evenly;
+      margin-bottom: 16px;
+
+}
+
+div.home-bottom {
+  flex-grow: 1;
+}
+
 
 .fa, .far, .fas, .fab {
 	font-size: 1.5rem;
 }
 
 .fa:hover, .far:hover, .fas:hover, .fab:hover {
-	color: $color-highlighter;
+	color: teal;
 }
 
 // posts
 
 article {
+  min-height: 68vh;
 	@extend %slideIn;
 	animation-delay: 0.8s;
 	clear: both;
-	margin: 2em auto 0 auto;
+	margin: 2em auto 4em auto;
   max-width: 60vw;
+  font-size: $prose-font-size;
 	a {
 		background: $color-highlighter;
 		color: #111;
@@ -141,4 +191,13 @@ article {
 			text-decoration: underline;
 		}
 	}
+}
+
+// footer
+footer {
+  max-height: 100px;
+  p {
+    margin-top: 8px;
+    margin-left: 8px;
+  }
 }
