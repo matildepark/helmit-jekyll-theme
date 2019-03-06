@@ -38,7 +38,7 @@ Make some changes to make the content more you.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/hello. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome [on GitHub](https://github.com/matildepark/helmit-jekyll-theme).
 
 ## Development
 
