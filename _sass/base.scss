@@ -252,6 +252,9 @@ footer {
 // mobile layout
 
 @media all and (max-width: 480px) {
+  .fa, .far, .fas, .fab {
+    font-size: 1.3rem;
+  }
   body {
     font-size: 12px;
   }

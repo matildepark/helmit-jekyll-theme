@@ -15,7 +15,7 @@ Clone this repo.
 Make some changes to make the site more you while you're adding content:
 
 - Start by configuring the site! Go to `_config.yml` and fill in as necessary.
-- Edit the content in `index.html` for the blurbs on the front page.
+- Edit the content in `layouts/homepage.html` for the blurbs on the front page.
 - Revise the copyright notice in `_includes/footer.html` to take ownership! Maybe use a [Creative Commons](https://creativecommons.org/) if you're feeling generous.
 - Put your content into the site! Remember to put a datestamp at the start of the filename for stuff in `_posts`. The sample content can give an example of how it works.
 - Change the site's style -- `_sass/variables.scss` lets you mingle with the colors and fonts.
